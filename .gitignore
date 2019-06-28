@@ -1,0 +1,20 @@
+# Files and directories created by pub
+.dart_tool
+.packages
+.pub/
+build/
+# Remove the following pattern if you wish to check in your lock file
+pubspec.lock
+# Directory created by dartdoc
+doc/api/
+# See https://github.com/dart-lang/site-webdev/issues/1351
+test/**/*.g.dart
+.DS_Store
+.idea/angular-dart-example-code.iml
+.idea/dictionaries/shi.xml
+.idea/libraries/Dart_Packages.xml
+.idea/libraries/Dart_SDK.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
