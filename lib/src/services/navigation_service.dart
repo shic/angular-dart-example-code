@@ -9,12 +9,12 @@ class NavigationService {
     this._location,
   );
 
-  void navigateTo() {
+  Future<Object> navigateTo(String destination) {
     print("object hello world");
-    _router.navigate("dash");
+    return _router.navigate(destination);
   }
 
-  void backTo() {
+  void pop() {
     print("location back");
     _location.back();
   }

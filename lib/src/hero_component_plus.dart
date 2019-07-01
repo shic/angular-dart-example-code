@@ -20,10 +20,10 @@ class HeroComponentPlus {
   HeroComponentPlus(this._navigationService);
 
   void navigateToAnotherPage() {
-    _navigationService.navigateTo();
+    _navigationService.navigateTo("dash");
   }
 
   void backNavigate() {
-    _navigationService.backTo();
+    _navigationService.pop();
   }
 }
