@@ -8,6 +8,7 @@ import 'package:angular_tour_of_heroes/src/navigation_service.dart';
     <div>
       <h2>plus</h2>
       <button (click)="hello()">hello navigate</button>
+      <button (click)="backNavigate()">back navigate</button>
 
     </div>
   ''',
@@ -20,5 +21,9 @@ class HeroComponentPlus {
 
   void hello() {
     _navigationService.navigateTo();
+  }
+
+  void backNavigate() {
+    _navigationService.backTo();
   }
 }
