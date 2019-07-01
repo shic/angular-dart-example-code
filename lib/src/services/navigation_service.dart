@@ -18,23 +18,19 @@ class NavigationService {
     });
   }
 
-  @override
   Future<Object> navigateTo(String destinationURL,
       {bool isModal = false, bool popPrevious = false}) {
     return _router.navigate(destinationURL);
   }
 
-  @override
   void popAndPushNamed(String destinationURL, {bool isModal: false}) {
     _router.navigate(destinationURL);
   }
 
-  @override
   void pop({Object returnValue}) {
     _location.back();
   }
 
-  @override
   void popUntil(String destinationURL) {
     _router.navigate(destinationURL);
   }
