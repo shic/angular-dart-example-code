@@ -1,4 +1,4 @@
-import 'dart:html';
+import 'dart:html' as dartHtml;
 
 import 'package:angular_router/angular_router.dart';
 
@@ -13,8 +13,8 @@ class NavigationService {
     // overrides every route if the language is not supported
     _router.onRouteActivated.listen((route) {
       // enforcing scroll to top at every page route
-      Element domBodyRef = querySelector("body");
-      domBodyRef.scrollIntoView(ScrollAlignment.TOP);
+      dartHtml.Element domBodyRef = dartHtml.querySelector("body");
+      domBodyRef.scrollIntoView(dartHtml.ScrollAlignment.TOP);
     });
   }
 
