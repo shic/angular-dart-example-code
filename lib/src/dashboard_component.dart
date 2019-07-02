@@ -1,5 +1,4 @@
 import 'package:angular/angular.dart';
-import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_tour_of_heroes/src/services/navigation_service.dart';
 
 @Component(
@@ -10,7 +9,7 @@ import 'package:angular_tour_of_heroes/src/services/navigation_service.dart';
       <button (click)="navigate()">navigate</button>
     </div>
   ''',
-  directives: [coreDirectives, formDirectives],
+  directives: [coreDirectives],
 )
 class DashboardComponent {
   NavigationService _navigationService;
